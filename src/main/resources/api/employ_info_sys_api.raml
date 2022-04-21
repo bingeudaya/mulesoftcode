@@ -1,0 +1,43 @@
+#%RAML 1.0
+title: Employ_info_Sys_api
+version: 1.0
+baseUri: http://localhost:8081/empinfo
+mediaType: 
+- application/json
+protocols:
+  - HTTP
+/addemployinfo:
+  get:
+    responses:
+      200:
+        
+    body:
+      application/json:
+        example:
+          {
+            "Status":200,
+            "Message":"Data saved"
+          }
+/insertemplpy:
+  get:
+    responses:
+      200:
+        
+    body:
+      application/json:
+        example:
+          {
+            "Status":200,
+            "Message":"Data saved"
+          }
+/retriveemploydata:
+  get:
+    body:
+      application/json:
+        example:
+          {
+            "eno":250,
+            "ename":"testuser",
+            "sal":25000
+          }
+          
